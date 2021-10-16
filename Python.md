@@ -41,7 +41,15 @@ def multiply_validate(A,B):
 def multiply(A,B):
   if multiply_validate(A,B):
     C = []
-    for i in range
+    for i in range(len(A)):
+    C.append([])
+      for j in range(len(B[0]):
+        for k in range(len(A[0]):
+          sum = sum + A[i][j]*B[j][i]
+          if k == len(A[0])
+            C[i].append(sum)
+        sum = 0
+    return C
 ```
 - Find the determinant of a matrix with two rows and two columns
 ```
@@ -145,4 +153,37 @@ def diagonal(A):
   return True
 ```
 [Linear Aljebra](https://en.wikipedia.org/wiki/Linear_algebra)
-- [Row Echelon](https://en.wikipedia.org/wiki/Row_echelon_form)
+- [Row Echelon](https://en.wikipedia.org/wiki/Row_echelon_form) (incomplete)
+```
+def row_echelon(A):
+  l = []
+  for i in range(len(A)):
+    for j in range(len(A[0]):
+      if A[i][j] == 1:
+        l.append([i,j])
+        continue
+```
+- Checking the dimension of two one dimensional array  
+Example A = [1, 2, 3, 4] and B = [5, 6, 7, 8] have equal dimension whereas C = [1,2] and A (as defined) do not!
+```
+def one_dim_vectors(A, B):
+  return len(A) == len(B)
+```
+- Linearly Dependent
+```
+def lin_depdent(A,B):
+  C = []
+  if one_dim_vectors(A, B):
+    for i in range(len[A]):
+      C.append(A[i]/B[i])
+    
+    for j in range(len(C)-1):
+      if C[j] != C[j+1]:
+      return False
+  return True
+```
+- Linearly Dependent Set
+```
+def linearly_dependent_set(A):
+  """ A is a list of lists"""
+  
