@@ -186,4 +186,8 @@ def lin_depdent(A,B):
 ```
 def linearly_dependent_set(A):
   """ A is a list of lists"""
-  
+```
+
+## Math Problems
+
+## Collection (Changing from one type to another)
