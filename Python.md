@@ -191,3 +191,6 @@ def linearly_dependent_set(A):
 ## Math Problems
 
 ## Collection (Changing from one type to another)
+
+## Miscellaneous
+- Given a list of integers create a new sorted list using slicing
